@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#eef5ee;
+}
+
+header{
+    background:url("natu.jpg") center;
+    background-size:cover;
+    height:220px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+main{
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    gap:20px;
+    padding:20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+}
+
+aside{
+    background:#cfeccf;
+    padding:20px;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.formulario{
+    padding:20px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input,
+select,
+textarea,
+button{
+    padding:10px;
+}
+
+button{
+    background:rgb(88, 158, 88);
+    color:white;
+    border:none;
+}
+
+footer{
+    background:#2f5d2f;
+    color:white;
+
+    display:flex;
+    justify-content:space-around;
+
+    padding:20px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    main{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    footer{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+}
